@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Rubik Runner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="hud" class="hidden">
+        SCORE: <span id="score">0</span>
+    </div>
+
+    <!-- UIオーバーレイ（開始・ゲームオーバー・クリア時に表示） -->
+    <div id="ui-overlay">
+        <div id="modal">
+            <h1 id="title">RUBIK RUNNER</h1>
+            <div id="desc" class="instruction">
+                1. <b>マスのタップ</b>: ジャンプ移動！<br>
+                2. <b>マスのスワイプ</b>: その層を回転！<br>
+                3. <b>背景のスワイプ</b>: カメラを回転！<br><br>
+                足場が消えないように移動しながら、キューブを揃えよう。
+            </div>
+            <button id="start-btn">システム起動</button>
+        </div>
+    </div>
+
+    <script type="importmap">
+        { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                       "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/" } }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
