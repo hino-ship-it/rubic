@@ -1,0 +1,36 @@
+body { margin: 0; overflow: hidden; background: #000; font-family: sans-serif; }
+canvas { display: block; }
+
+#hud {
+    position: absolute; top: 20px; left: 20px; color: #00f0ff;
+    font-weight: bold; font-size: 20px; z-index: 100; pointer-events: none;
+}
+
+#ui-overlay {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8); display: flex; justify-content: center; align-items: center;
+    z-index: 1000; color: white;
+}
+
+#modal {
+    background: rgba(20, 20, 20, 0.95); 
+    padding: 40px; 
+    border: 2px solid #00f0ff;
+    border-radius: 20px; 
+    text-align: center; 
+    max-width: 450px;
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.3);
+}
+
+.instruction {
+    margin: 20px 0; text-align: left; line-height: 1.8;
+}
+
+button {
+    background: #00f0ff; border: none; padding: 15px 30px;
+    font-weight: bold; cursor: pointer; border-radius: 30px; margin-top: 20px;
+}
+button:hover {
+    background: #ffffff; color: #00f0ff;
+}
+.hidden { display: none !important; }
